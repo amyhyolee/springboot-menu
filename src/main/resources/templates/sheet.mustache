@@ -1,0 +1,39 @@
+{{>layout/header}}
+<div class=content>
+  <form action="/" class="decor" id="contactForm">
+    <div class="form-left-decoration"></div>
+    <div class="form-right-decoration"></div>
+    <div class="circle"></div>
+    <div class="form-inner">
+      <h1>Contact us</h1>
+      <input type="text" placeholder="Username" name="username">
+      <input type="email" placeholder="Email" name="email">
+      <textarea placeholder="Message..." rows="5" name="message"></textarea>
+      <button type="submit" href="/" id="submitButton">Submit</button>
+    </div>
+  </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $("#submitButton").click(function () {
+    //preventDefault 는 기본으로 정의된 이벤트를 작동하지 못하게 하는 메서드이다. submit을 막음 
+    $("#submitButton").prop("disabled", true);
+    $.post("https://script.google.com/macros/s/AKfycbykmYZml7xxPVo7BY_82DJ5Gp5kX_ekTGsH6VhEy72VySTu_UF4J4ok58_gYpmy7bro/exec",
+      $('#contactForm').serialize(),
+      function (data, status) {
+        if (data.trim() == "ok") {
+          alert("산타 클로스에게 전달되었습니다.");
+          $("#submitButton").prop("disabled", false);
+          location.reload();
+          //console.log(status);
+        } else {
+          alert("산타 클로스에게 전달 실패");
+        }
+        //alert("Data: " + data + "\nStatus: " + status);
+        //$("#div1").html(data);
+      });
+  });
+</script>
+
+
+{{>layout/footer}}

@@ -1,0 +1,21 @@
+{{>layout/header}}
+
+<h5>푸드 페이지</h5>
+음식 입력!
+<div class="main">
+  <div class="form-group">
+    <label for="data">메뉴 입력:</label> <input type="text" class="form-control" id="data" placeholder="메뉴를 입력하세요."
+      name="data">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <br>
+  <!-- 		<p id="input">입력한 음식이 나타납니다.</p>
+ --> <br>
+  <h5>현재 메뉴 출력</h5>
+  {{menuname}}
+
+</div>
+
+<script src="/js/menu.js"></script>
+
+{{>layout/footer}}

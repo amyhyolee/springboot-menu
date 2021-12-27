@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding-top: 100px;	
+}
+
+.navbar {	
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #8e0000;
+	font-family: 'Exo 2', sans-serif;
+	justify-content: flex-end;
+}
+
+.container {
+ height: 67.5px;
+}
+.navbar a {	
+	float: right;
+	display: block;
+	color: #feffff;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	color: black;
+}
+
+.main {
+	margin-left: 50px;
+}
+
+.form-control {
+	width: 95%;
+}
