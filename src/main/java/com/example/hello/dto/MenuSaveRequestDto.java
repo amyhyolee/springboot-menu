@@ -18,7 +18,7 @@ public class MenuSaveRequestDto {
 
     public Menu toEntity() {
         return Menu.builder()
-            .menu(menu)
-            .build();
+                .menu(menu)
+                .build();
     }
 }

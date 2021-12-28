@@ -23,11 +23,11 @@ public class IndexController {
         return "input";
     }
 
-    @GetMapping("/menu")
-    public String menu(Model model) {
-        model. addAttribute("menuname", "고기");
-        return "menu";
-    }
+    // @GetMapping("/menu")
+    // public String menu(Model model) {
+    //     model. addAttribute("menuname", "고기");
+    //     return "menu";
+    // }
 
     @GetMapping("/random")
     public String random() {
