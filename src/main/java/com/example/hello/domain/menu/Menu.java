@@ -25,4 +25,8 @@ public class Menu {
     public Menu(String menu) {
         this.menu = menu;
     }
+
+    public void update(String menu) {
+        this.menu = menu;
+    }
 }

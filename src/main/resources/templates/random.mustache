@@ -1,6 +1,13 @@
 {{>layout/header}}
+<div class="main">
+    <img src="/img/food.jpg" class="mainpic" alt="mainpic">
+    <div id="main-menu">
+        <h5>오늘의 추천 메뉴는?</h5>
+        <button type="button" id="rndBtn" class="btn btn-outline-success">메뉴 보기</button>
+        <br><br>
+        <div id="text-r">메뉴 보기 누르시면 AI가 추천 하는 메뉴를 볼 수 있습니다.</div>
 
-<h5>렌덤 페이지</h5>
-렌덤!
-
+        <script src="/js/menu.js"></script>
+    </div>
+</div>
 {{>layout/footer}}

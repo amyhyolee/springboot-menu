@@ -6,7 +6,7 @@ $(document).ready(function () {
       },
       function (data, status) {
         //alert("Data: " + data + "\nStatus: " + status);
-        $("#div1").html(data);
+        $("#text-i").html(data);
       });
   });
 });

@@ -3,10 +3,33 @@
     opacity: 40%;
 }
 
+.mainpic-input {
+    width: 100%;
+    opacity: 90%;
+}
+
 #title {
 font-size: 100px;
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+}
+
+#main-menu {
+    position: absolute;
+    top: 20%;
+    left:40%;
+    width: 40%;
+}
+
+#main-input {
+    position: absolute;
+    top: 25%;
+    left:10%;
+    /* width: 50%; */
+}
+
+#text-i {
+    color: whitesmoke;
 }
