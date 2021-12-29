@@ -11,7 +11,7 @@ import com.example.hello.dto.MenuSaveRequestDto;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.PutMapping;
+// import org.springframework.web.bind.annotation.PutMapping;
 
 import lombok.RequiredArgsConstructor;
 
