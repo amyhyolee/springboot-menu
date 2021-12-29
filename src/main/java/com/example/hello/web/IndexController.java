@@ -38,4 +38,9 @@ public class IndexController {
     public String sheet() {
         return "sheet";
     }
+
+    @GetMapping("/melon")
+    public String melon() {
+        return "melon";
+    }
 }

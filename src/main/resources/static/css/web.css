@@ -30,6 +30,14 @@ transform: translate(-50%, -50%);
     /* width: 50%; */
 }
 
+#main-melon {
+    position: absolute;
+    top: 20%;
+    left:10%;
+}
 #text-i {
     color: whitesmoke;
 }
+
+
+
