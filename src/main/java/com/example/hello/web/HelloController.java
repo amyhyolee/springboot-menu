@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.example.hello.dto.MusicInfoDto;
 import com.example.hello.service.MelonService;
+import com.example.hello.service.NaverApiService;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -30,5 +31,12 @@ public class HelloController {
     @GetMapping("/api/v1/melon")
     public List<MusicInfoDto> melon() {
         return melonService.findMusicList();
+    }
+
+    private final NaverApiService naverApiService;
+    @GetMapping("/api/v1/news")
+    public String news(@RequestParam(value = "data", defaultValue = "없음") String data) {
+        System.out.println(data);
+        return naverApiService.searchNews(data);
     }
 }

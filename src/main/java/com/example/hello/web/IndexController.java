@@ -43,4 +43,9 @@ public class IndexController {
     public String melon() {
         return "melon";
     }
+
+    @GetMapping("/naverapi")
+    public String naverapi() {
+        return "naverapi";
+    }
 }

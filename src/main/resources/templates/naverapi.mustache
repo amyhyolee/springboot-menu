@@ -1,0 +1,28 @@
+{{>layout/header}}
+<div id="main">
+    <img src="/img/melon.jpg" class="mainpic" alt="mainpic" id="melonpic">
+    <div id="main-melon">
+        <div class="form-inline">
+            <div class="form-group">
+              <input type="text" class="form-control mb-2 mr-sm-2" id="search" placeholder="입력하세요." name="data">
+            </div>
+            <button type="button" id="naverapibtn" class="btn btn-primary mb-2">확인</button>
+          </div>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>날짜</th>
+                </tr>
+            </thead>
+            <tbody id="searchlist">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="/js/naverApi.js"></script>
+
+{{>layout/footer}}
