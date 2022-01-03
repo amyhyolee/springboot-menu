@@ -109,10 +109,10 @@ public class NaverAPI {
 	// }
 	
 	public static String naverSearch(String str, String str2) {
-		String[] code = Util.readtoConsole("/Users/hyojinlee/java-workspace/naver_client.txt").split("\\n");
+		// String[] code = Util.readtoConsole("/Users/hyojinlee/java-workspace/naver_client.txt").split("\\n");
 
-		String clientId = code[0]; // 애플리케이션 클라이언트 아이디값"
-		String clientSecret = code[1]; // 애플리케이션 클라이언트 시크릿값"
+		String clientId = "tpjj7sH7kLvKXJmf7Xua"; // 애플리케이션 클라이언트 아이디값"
+		String clientSecret = "xYu86SpWWL"; // 애플리케이션 클라이언트 시크릿값"
 
 		String text = null;
 		try {
