@@ -48,4 +48,8 @@ public class IndexController {
     public String naverapi() {
         return "naverapi";
     }
+    @GetMapping("/playlist")
+    public String playlist() {
+        return "playlist";
+    }
 }

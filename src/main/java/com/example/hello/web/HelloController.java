@@ -3,6 +3,7 @@ package com.example.hello.web;
 import java.util.List;
 
 import com.example.hello.dto.MusicInfoDto;
+import com.example.hello.dto.PlaylistDto;
 import com.example.hello.service.MelonService;
 import com.example.hello.service.NaverApiService;
 
@@ -39,4 +40,14 @@ public class HelloController {
         System.out.println(data);
         return naverApiService.searchNews(data);
     }
+
+    @GetMapping("/api/v1/playlist")
+    public PlaylistDto playlist() {
+        PlaylistDto dto = new PlaylistDto();
+        dto.setTitle("겨울잠");
+        dto.setArtist("아이유");
+        dto.setSongLink("https://www.youtube.com/watch?v=FXfvbMEWkhk");
+        return dto;
+    }
+
 }
