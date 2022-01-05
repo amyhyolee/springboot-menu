@@ -1,6 +1,10 @@
 package com.example.hello.web;
 
+import com.example.hello.domain.user.UserDetailsImpl;
+
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 // import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 // import org.springframework.web.bind.annotation.ResponseBody;
@@ -9,7 +13,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class IndexController {
 
     @GetMapping("/")
-    public String index() { // @ResponseBody - 나오는지 확인 가능
+    public String index(Model model, @AuthenticationPrincipal UserDetailsImpl userDetails) { // @ResponseBody - 나오는지 확인 가능
+        model.addAttribute("username", userDetails.getUsername());
         return "index";
     }
 
